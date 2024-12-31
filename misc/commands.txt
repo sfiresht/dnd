@@ -1,0 +1,6 @@
+setting the postgres:
+inside the same folder as the file
+podman-compose -f Docker-compose-postgres.yaml up -d
+
+delete the pod:
+podman pod rm -f pod_db

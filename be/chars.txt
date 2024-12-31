@@ -1,0 +1,1 @@
+{'name': 'test', 'race': 'orc', 'job': 'thief', 'strength': 150, 'wisdom': 150, 'health': 150, 'dexterity': 150}

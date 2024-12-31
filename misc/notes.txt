@@ -1,0 +1,19 @@
+when connecting from the pgadmin to the db it's possible to do that in 2 ways:
+
+1. forward a "public" port to the container and use either the external ip or 127.0.0.1 as the pgadmin is on the same machine
+2. use the podman dns name ("db_db_1") that way the pgadmin will connect from the internal podman network.
+
+
+
+flask endpoints - if the app is simple you can just run app = flask(_name_) and the ep's will be @app.route(/url/)
+
+flask blueprints - while it's possible to create manual endpoint it's easier to create a blueprint. 
+the blueprint will include all endpoint which has the endpoint_name.route in them, that wasy we can register them into the main app by importing them.
+after we created the flask app they will be refered to as modules.
+https://flask.palletsprojects.com/en/stable/blueprints/
+
+
+flask config -best practice:
+1. create a config folder/file
+2. in your app.py (either init or just whenever) run app.config.from_object() the object here should be the path to the configuration for example
+folder config file default_config.py class settings ->  'config.defaul.config.settings' this should be inserted as string.

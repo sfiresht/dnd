@@ -1,0 +1,2 @@
+json
+psycopg2-binary
