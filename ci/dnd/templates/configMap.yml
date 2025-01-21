@@ -1,8 +1,0 @@
-apiVerion: v1
-kind: configMap
-metadata:
-  name: testConfigMap
-data:
-  appName: dnd
-  appVersion: 0.1.0
-  message: "Hello from DND"
