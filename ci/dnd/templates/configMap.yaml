@@ -1,8 +1,0 @@
-apiVerion: v1
-kind: configMap
-metadata:
-  name: testConfigMap-{{ .Release.Name }}-{{ .Release.Revision}}
-data:
-  appName: {{ .Chart.Name }}
-  appVersion: {{ .Chart.AppVersion }}
-  message: "Hello from DND"

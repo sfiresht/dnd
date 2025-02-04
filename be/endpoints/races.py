@@ -2,7 +2,7 @@ from flask import Blueprint , request, jsonify
 #from be.character import character
 
 
-#name here is the name from the top of the folder so in our case: DnD.be.endpoints
+#name here is the name from the top of the folder so in our case: dnd.be.endpoints
 #app = Flask(__name__)
 
 races_bp = Blueprint("races", __name__)

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap-database
+  namespace: dnd
+data:
+  POSTGRES_USER: 'admin'  # default user - postgress
+  POSTGRES_PASSWORD: 'password'
+  POSTGRES_DB: 'dnd'
+  APPNAME: {{ .Chart.Name }}
+  APPVERSION: {{ .Chart.AppVersion }}
+  MESSAGE: "Hello from DND"
